@@ -1,1 +1,155 @@
-2222
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="zui/css/zui.css"/>
+		<link rel="stylesheet" type="text/css" href="css/form.css"/>
+	</head>
+	<body>
+		<table class="table-auto">
+			<thead>
+				<tr>
+					<th>头像</th>
+					<th>照片</th>
+					<th>颜值</t1h>
+					<th>左眼</th>
+					<th>右眼</th>
+					<th>笑容</th>
+				</tr>
+			</thead>
+			<!-- 第一个人 -->
+			<tr>
+				<td rowspan="4" class="tx">
+					<img src="img/114.png" >
+				</td>
+				<td rowspan="4" colspan="5" class="other">
+					<div class="list-group sortableList">
+					  <div class="list-group-item box" onmouseup="bctives(this)">
+						  <img src="img/114.png">
+						  <div>98</div>
+						  <div>睁开</div>
+						  <div>闭合</div>
+						  <div>在笑</div>
+					  </div>
+					  <div class="list-group-item box" onmouseup="bctives(this)">
+						  <img src="img/115.png">
+						  <div>67.5</div>
+						  <div>睁开</div>
+						  <div>睁开</div>
+						  <div>没在笑</div>
+					  </div>
+					  <div class="list-group-item box" onmouseup="bctives(this)">
+						  <img src="img/114.png">
+						  <div>85.7</div>
+						  <div>睁开</div>
+						  <div>睁开</div>
+						  <div>没在笑</div>
+					  </div>
+					  <div class="list-group-item box" onmouseup="bctives(this)">
+						  <img src="img/115.png">
+						  <div>75</div>
+						  <div>睁开</div>
+						  <div>睁开</div>
+						  <div>没在笑</div>
+					  </div>
+					  <div class="list-group-item box" onmouseup="bctives(this)">
+						  <img src="img/114.png">
+						  <div>26</div>
+						  <div>睁开</div>
+						  <div>睁开</div>
+						  <div>没在笑</div>
+					  </div>
+					</div>
+				</td>
+			</tr>
+			<tr class="other"></tr>
+			<tr class="other"></tr>
+			<tr class="other"></tr>
+			<!-- 换下一个人，中间空行 -->
+			<tr style="height: 50px;"></tr>
+			
+			
+			<!-- 第二个人 -->
+			<tr>
+				<td rowspan="4" class="tx">
+					<img src="img/115.png" >
+				</td>
+				<td rowspan="4" colspan="5">
+					<div class="list-group sortableList">
+					  <div class="list-group-item box" onmouseup="bctives(this)">
+						  <img src="img/114.png">
+						  <div>98</div>
+						  <div>睁开</div>
+						  <div>闭合</div>
+						  <div>在笑</div>
+					  </div>
+					  <div class="list-group-item box" onmouseup="bctives(this)">
+						  <img src="img/115.png">
+						  <div>67.5</div>
+						  <div>睁开</div>
+						  <div>睁开</div>
+						  <div>没在笑</div>
+					  </div>
+					  <div class="list-group-item box" onmouseup="bctives(this)">
+						  <img src="img/114.png">
+						  <div>85.7</div>
+						  <div>睁开</div>
+						  <div>睁开</div>
+						  <div>没在笑</div>
+					  </div>
+					  <div class="list-group-item box" onmouseup="bctives(this)">
+						  <img src="img/115.png">
+						  <div>75</div>
+						  <div>睁开</div>
+						  <div>睁开</div>
+						  <div>没在笑</div>
+					  </div>
+					  <div class="list-group-item box" onmouseup="bctives(this)">
+						  <img src="img/114.png">
+						  <div>26</div>
+						  <div>睁开</div>
+						  <div>睁开</div>
+						  <div>没在笑</div>
+					  </div>
+					</div>
+				</td>
+			</tr>
+			<tr></tr>
+			<tr></tr>
+			<tr></tr>
+			<!-- <td rowspan="2" bgcolor="blue">11</td> -->
+		</table>
+		
+		
+		<script src="zui/lib/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="zui/js/zui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="zui/lib/sortable/zui.sortable.min.js"></script>
+		<script type="text/javascript">
+			
+			// 初始化时传入选项参数
+			$('.sortableList').sortable();
+			
+			function bctives(o){
+				list = document.getElementsByClassName("sortableList");
+				for(var j=0;j<list.length;j++){
+					items = list[j].getElementsByClassName("list-group-item");
+					for(var i=1;i<items.length;i++){
+						items[i].style.backgroundColor = "white";
+					}
+					items[0].style.backgroundColor = "aquamarine";
+				}
+				// items = document.getElementsByClassName("list-group-item");
+				
+			};
+			window.onload = function(){
+				list = document.getElementsByClassName("sortableList");
+				for(var j=0;j<list.length;j++){
+					items = list[j].getElementsByClassName("list-group-item");
+					items[0].style.backgroundColor = "aquamarine";
+				}
+			};
+			
+		</script>
+	</body>
+</html>
