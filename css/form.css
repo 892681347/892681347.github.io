@@ -1,0 +1,15 @@
+*{padding: 0;}
+.list-group{margin-bottom: 0;}
+th{text-align: center; padding: 10px 20px;}
+.tx{width: 200px;height: 206.8px;text-align: center;}
+.other{width: 280px;}
+.left{float: left;}
+.list-group-item{padding: 10px 0;}
+.box{box-shadow: 0 30px 60px 0 rgba(0,0,0,.3);overflow:hidden;display:flex;text-align: center;}
+.box>*{width: 20%;float: left;align-self:center;}
+
+.sortableList > .list-group-item {cursor: move}
+.sortableList > .list-group-item.dragg1ing {
+  visibility: visible;
+  opacity: .3;
+}
